@@ -32,3 +32,34 @@ It focuses on leveraging **pre-trained models** (such as ResNet or similar archi
 - Device check to ensure GPU (CUDA) is available for faster training:
   ```python
   device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+
+
+  4. Model Preparation
+
+Downloaded ImageNet class labels for interpreting predictions:
+
+LABELS_URL = "https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json"
+
+
+Loaded a pre-trained CNN model (e.g., ResNet18, VGG16, or MobileNet) from torchvision.models.
+
+5. Fine-Tuning Steps
+
+Loaded pre-trained weights.
+
+Replaced the final classification layer to match the target dataset’s number of classes.
+
+Applied transformations (resize, crop, normalization) using torchvision.transforms.
+
+Defined loss and optimizer (likely CrossEntropyLoss and Adam/SGD).
+
+Implemented a training loop and evaluation loop to monitor model performance.
+
+6. Training and Evaluation
+
+Displayed progress using tqdm progress bars.
+
+Measured model performance using accuracy and loss plots.
+
+Compared pre-trained vs fine-tuned model results.
