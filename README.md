@@ -35,7 +35,7 @@ It focuses on leveraging **pre-trained models** (such as ResNet or similar archi
 
 
 
-  4. Model Preparation
+## 4. Model Preparation
 
 Downloaded ImageNet class labels for interpreting predictions:
 
@@ -44,7 +44,7 @@ LABELS_URL = "https://s3.amazonaws.com/deep-learning-models/image-models/imagene
 
 Loaded a pre-trained CNN model (e.g., ResNet18, VGG16, or MobileNet) from torchvision.models.
 
-5. Fine-Tuning Steps
+## 5. Fine-Tuning Steps
 
 Loaded pre-trained weights.
 
@@ -56,7 +56,7 @@ Defined loss and optimizer (likely CrossEntropyLoss and Adam/SGD).
 
 Implemented a training loop and evaluation loop to monitor model performance.
 
-6. Training and Evaluation
+## 6. Training and Evaluation
 
 Displayed progress using tqdm progress bars.
 
