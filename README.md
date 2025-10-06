@@ -1,13 +1,13 @@
-# 🧠 PyTorch Seminar – Fine-Tuning Pretrained CNNs
+# PyTorch Seminar – Fine-Tuning Pretrained CNNs
 
-## 📘 Overview
+## Overview
 
 This notebook demonstrates **fine-tuning convolutional neural networks (CNNs)** using **PyTorch** and **TorchVision**.  
 It focuses on leveraging **pre-trained models** (such as ResNet or similar architectures) trained on the **ImageNet dataset** to perform transfer learning for new image classification tasks.
 
 ---
 
-## 📚 Topics Covered
+##  Topics Covered
 
 ### 1. **Introduction to TorchVision**
 - Overview of the `torchvision` library and its utilities:
